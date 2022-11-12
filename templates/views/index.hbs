@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{title}}</title>
+        <link rel="stylesheet" href="css/styles.css"/> <!-- static path for public folder is already set in app.js -->
+    </head>
+    <body>
+
+        <video id="background-video" autoplay loop muted >
+        {{!-- <source src="https://assets.mixkit.co/videos/preview/mixkit-rain-falling-from-the-roof-on-a-rainy-day-2716-large.mp4" type="video/mp4"> --}}
+        </video>
+
+        <div class="main-content">
+
+            <div>
+              {{>header}}
+              
+              <article class="widget">
+                
+                <form class="weatherLocation"><input class ="input" placeholder="Enter the name of the place..." type = "text"/><button class="glow-on-hover">Seach</button>
+                </form>
+                </div>
+
+
+            <div class="container-bottom">
+        <div class="weatherIcon"><i class="wi wi-day-cloudy"></i></div>
+                <div class="weatherInfo">
+                    <div class="temperature"><span></span></div>
+                    <div class="description">    
+    
+                        <div class="weatherCondition"></div>    
+                        <div class="place"></div>
+                    </div>
+                </div>
+                <div class="date"></div>
+               </article>
+            </div>
+
+
+            
+             <p class="caution">If its stuck on "Loading" try reloading the page..</p>  
+        </div>
+        <script src="js/script.js"></script> <!-- absolute path -->
+    </body>
+</html>
